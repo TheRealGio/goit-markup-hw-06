@@ -28,10 +28,67 @@
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <div class="close" data-modal-close>
-        <svg width="11" height="11">
-          <use width="11" height="11" href="./images/icons.svg#icon-close"></use>
-        </svg>
+          <svg width="11" height="11">
+            <use width="11" height="11" href="./images/icons.svg#icon-close"></use>
+          </svg>
         </div>
+        <div class="modal-wrapper">
+          <h2 class="modal-title">Leave your information and we'll call you back</h2>
+          <form>
+            <label class="modal-label">
+              <div class="modal-label-text-wrapper">
+                Name
+              </div>
+              <div class="modal-input-wrapper">
+                <input type="text" name="name" class="modal-label-input"/>
+                <svg width="12" height="12" class="modal-input-icon-user">
+                  <use href="./images/icons.svg#icon-name"></use>
+                </svg>
+                </div>
+            </label>
+            <label class="modal-label">
+              <div class="modal-label-text-wrapper">
+                Telephone
+              </div>
+              <div class="modal-input-wrapper">
+                <input type="tel" name="telephone" class="modal-label-input"/>
+                <svg width="14" height="14" class="modal-input-icon-telephone">
+                  <use href="./images/icons.svg#icon-telephone"></use>
+                </svg>
+              </div>
+            </label>
+            <label class="modal-label">
+              <div class="modal-label-text-wrapper">
+                E-Mail
+              </div>
+              <div class="modal-input-wrapper">
+                <input type="email" name="email" class="modal-label-input"/>
+                <svg width="17" height="16" class="modal-input-icon-email">
+                  <use href="./images/icons.svg#icon-form-envelope"></use>
+                </svg>
+              </div>
+            </label>
+            <label class="modal-label">
+              Comments
+              <textarea name="comments" placeholder="Enter the text" class="modal-label-textarea"></textarea>
+            </label>
+            <div class="modal-checkbox-section-wrapper">
+              <label class="modal-checkbox-label">
+                <div class="modal-checkbox-wrapper">
+                  <input type="checkbox" name="newsletter terms and conditions" class="modal-checkbox-input"/>
+                </div>
+                <div class="modal-checkbox-text">
+                I agree with the newsletter and accept the Terms and Conditions
+                </div>
+              </label>
+              <div class="modal-button-wrapper">
+                <button type="submit" class="modal-send-button">Send</button>
+              </div>
+            </div>
+            </div>
+        </div>
+
+          </form>
       </div>
     </div>
   <header class="header-line">
@@ -414,7 +471,7 @@
           </li>
         </ul>
         </div>
-        <div>
+        <div class="social-media-container">
           <p class="social-media-footer-title">FIND US ON</p>
           <ul class="social-media-footer list">
               <li class="social-media-icon footer-social-media">
@@ -450,6 +507,19 @@
           </ul>
         </div>
       </address>
+      <div class="newsletter-section">
+        <label>
+          <p class="social-media-footer-title">SUBSCRIBE TO THE NEWSLETTER</p>
+          <input type="email" name="newsletter email" placeholder="E-mail" class="newsletter-input-styling"/>
+          <button type="submit" class="newsletter-button">
+            Subscribe
+            <svg width="24" height="24">
+              <use href="./images/icons.svg#icon-send">
+              </use>
+            </svg>
+          </button>
+        </label>
+      </div>
     </div>
   </footer>
     <script src="./js/modal.js"></script>
