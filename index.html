@@ -36,47 +36,44 @@
           <h2 class="modal-title">Leave your information and we'll call you back</h2>
           <form>
             <label class="modal-label">
-              <div class="modal-label-text-wrapper">
+              <span class="modal-label-text-wrapper">
                 Name
-              </div>
-              <div class="modal-input-wrapper">
+              </span>
                 <input type="text" name="name" class="modal-label-input"/>
-                <svg width="12" height="12" class="modal-input-icon-user">
+                <svg width="12" height="12" class="modal-input-icon">
                   <use href="./images/icons.svg#icon-name"></use>
                 </svg>
-                </div>
             </label>
             <label class="modal-label">
-              <div class="modal-label-text-wrapper">
+              <span class="modal-label-text-wrapper">
                 Telephone
-              </div>
-              <div class="modal-input-wrapper">
+              </span>
                 <input type="tel" name="telephone" class="modal-label-input"/>
-                <svg width="14" height="14" class="modal-input-icon-telephone">
+                <svg width="14" height="14" class="modal-input-icon">
                   <use href="./images/icons.svg#icon-telephone"></use>
                 </svg>
-              </div>
             </label>
             <label class="modal-label">
-              <div class="modal-label-text-wrapper">
+              <span class="modal-label-text-wrapper">
                 E-Mail
-              </div>
-              <div class="modal-input-wrapper">
+              </span>
                 <input type="email" name="email" class="modal-label-input"/>
-                <svg width="17" height="16" class="modal-input-icon-email">
+                <svg width="17" height="16" class="modal-input-icon">
                   <use href="./images/icons.svg#icon-form-envelope"></use>
                 </svg>
-              </div>
             </label>
-            <label class="modal-label">
+            <label class="modal-label modal-label-last">
+              <span class="modal-label-text-wrapper">
               Comments
-              <textarea name="comments" placeholder="Enter the text" class="modal-label-textarea"></textarea>
+              </span>
+              <textarea name="comments" placeholder="Enter the text" class="modal-label-textarea" rows="6"></textarea>
             </label>
             <div class="modal-checkbox-section-wrapper">
               <label class="modal-checkbox-label">
-                <div class="modal-checkbox-wrapper">
-                  <input type="checkbox" name="newsletter terms and conditions" class="modal-checkbox-input"/>
-                </div>
+                  <input type="checkbox" name="newsletter terms and conditions" class="modal-checkbox-input" />
+                  <svg width="16" height="15" class="modal-checkbox-svg">
+                    <use href="./images/icons.svg#icon-check"></use>
+                  </svg>
                 <div class="modal-checkbox-text">
                 I agree with the newsletter and accept the Terms and Conditions
                 </div>
@@ -507,18 +504,7 @@
           </ul>
         </div>
       </address>
-      <div class="newsletter-section">
-        <label>
-          <p class="social-media-footer-title">SUBSCRIBE TO THE NEWSLETTER</p>
-          <input type="email" name="newsletter email" placeholder="E-mail" class="newsletter-input-styling"/>
-          <button type="submit" class="newsletter-button">
-            Subscribe
-            <svg width="24" height="24">
-              <use href="./images/icons.svg#icon-send">
-              </use>
-            </svg>
-          </button>
-        </label>
+ 
       </div>
     </div>
   </footer>
