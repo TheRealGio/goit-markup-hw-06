@@ -34,7 +34,7 @@
         </div>
         <div class="modal-wrapper">
           <h2 class="modal-title">Leave your information and we'll call you back</h2>
-          <form>
+          <form class="modal-form">
             <label class="modal-label">
               <span class="modal-label-text-wrapper">
                 Name
@@ -68,7 +68,6 @@
               </span>
               <textarea name="comments" placeholder="Enter the text" class="modal-label-textarea" rows="6"></textarea>
             </label>
-            <div class="modal-checkbox-section-wrapper">
               <label class="modal-checkbox-label">
                   <input type="checkbox" name="newsletter terms and conditions" class="modal-checkbox-input" />
                   <svg width="16" height="15" class="modal-checkbox-svg">
@@ -78,14 +77,9 @@
                 I agree with the newsletter and accept the Terms and Conditions
                 </div>
               </label>
-              <div class="modal-button-wrapper">
-                <button type="submit" class="modal-send-button">Send</button>
-              </div>
-            </div>
-            </div>
-        </div>
-
+            <button type="submit" class="modal-send-button">Send</button>
           </form>
+        </div>
       </div>
     </div>
   <header class="header-line">
@@ -446,7 +440,7 @@
       </div>
     </section>
   </main>
-  <footer class="footer-style">
+ <footer class="footer-style">
     <div class="container footer-content-dividing">
       <div class="footer-contact-info">
       <a href="index.html" class="logo link footer-logo">WebStudio</a>
@@ -504,8 +498,18 @@
           </ul>
         </div>
       </address>
- 
-      </div>
+      <div class="newsletter-section">
+        <p class="social-media-footer-title">SUBSCRIBE TO THE NEWSLETTER</p>
+        <form>
+          <input type="email" name="newsletter email" placeholder="E-mail" class="newsletter-input-styling"/>
+          <button type="submit" class="newsletter-button">
+            Subscribe
+            <svg width="24" height="24">
+              <use href="./images/icons.svg#icon-send">
+              </use>
+            </svg>
+          </button>
+        </form>
     </div>
   </footer>
     <script src="./js/modal.js"></script>
